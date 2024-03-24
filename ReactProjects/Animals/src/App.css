@@ -1,0 +1,27 @@
+/* No Use CSS Classes */
+.heading {
+    background-color: aquamarine;
+    padding: 10px;
+    text-align: center;
+    font-size: 40px; /* Default font size for larger screens */
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
+}
+
+/* When the screen (width) is 800px or less, decrease the font size */
+@media screen and (max-width: 800px) {
+    .heading {
+        font-size: 30px;
+    }
+}
+
+/* When the screen (width) is 500px or less, decrease the font size even more */
+@media screen and (max-width: 500px) {
+    .heading {
+        font-size: 20px;
+    }
+}
+/* No Use CSS Classes */

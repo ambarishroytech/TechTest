@@ -1,0 +1,14 @@
+.wrapper-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row; /* Add this line */
+}
+
+.wrapper-card {
+    width: calc(33.33% - 10px);
+    margin-bottom: 20px;
+    background-color: #f1f1f1;
+    padding: 20px;
+    box-sizing: border-box;
+}
