@@ -1,0 +1,36 @@
+JavaScript Summary-
+1. Weakly Typed Language
+2. Object-Oriented Language
+3. Versatile Language
+====
+Open the start menu, search for "Environment Variables" and select "Edit the system environment variables".
+In the System Properties window that appears, click on the "Environment Variables" button.
+In the Environment Variables window, under the "System variables" section, find the "Path" variable, select it, and click on "Edit".
+In the Edit Environment Variable window, click on "New", and then add the path to the directory where Node.js is installed. This is typically C:\Program Files\nodejs\.
+Click "OK" on all the windows to close them.
+Restart your terminal.
+=======
+
+Rest operator vs Destructuring-
+In JavaScript, both the rest operator (...) and destructuring are used to work with arrays and objects, but they serve different purposes.
+Destructuring is a JavaScript expression that allows us to extract data from arrays, objects, maps and sets into their own variable. It allows us to extract properties from an object or items from an array, multiple at a time.
+For example:
+let [first, second, ...rest] = [1, 2, 3, 4, 5];
+console.log(first); // 1
+console.log(second); // 2
+console.log(rest); // [3, 4, 5]
+ 
+In this example, first and second are assigned the first and second elements of the array, respectively, and ...rest collects the remaining elements into an array.
+ 
+Rest operator (...) is used to collect the rest of the elements into an array. This is useful when you want to create a new array with remaining elements after some have been used.
+ 
+For example:
+ 
+let {a, b, ...rest} = {a: 10, b: 20, c: 30, d: 40};
+console.log(a); // 10
+console.log(b); // 20
+console.log(rest); // {c: 30, d: 40}
+ 
+In this example, a and b are destructured from the object, and ...rest collects the remaining properties into an object.
+So, in summary, destructuring is used to unpack elements or properties from arrays and objects, while the rest operator is used to collect the remaining elements or properties into an array or object.
+==========

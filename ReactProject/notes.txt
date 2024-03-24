@@ -1,0 +1,51 @@
+npm init react-app example-app
+npm start
+===================================
+A. React Essentials: Part 1
+-----------------------------------
+1. Setting up project
+2. JSX & React Components
+3. Custom Components
+4. Function and Props
+5. Events
+6. Data binding
+7. State
+8. Component level communication
+9. Debugging React App
+------------------------------------
+B. React Essentials: Part 2
+-----------------------------------
+9. More usage of Props
+10. Fragments
+11. Split Component
+12. Multiple JSX Slots
+13. Flexible Component
+15. Rendering multi-dimensional list
+14. More usage of State
+16. Lifting State Up
+------------------------------------
+C. React Styling-
+17. Styling with Vanilla CSS
+18. Inline Styling
+19. Dynamic and Conditional Styling
+20. Pseudo Selector, Nested Rules & Media Query
+21. Tailwind CSS for React APP
+------------------------------------
+D. React Router-
+E. Refs-
+F. Context API-
+G. useReducer-
+H. Handling Side Effect, useEffect Hook-
+I. Class based Component-
+J. Http Requests-
+K. Custom React Hooks-
+L. Forms and User Input-
+M. Redux-
+N. Replacing Redux with React Hooks-
+O. Adding Authentication to React App-
+P. Unit Tests-
+Q. Deploying React App-
+------------------------------------
+
+
+npm install bulma
