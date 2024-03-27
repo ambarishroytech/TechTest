@@ -1,0 +1,10 @@
+// Whenever we change the state, the component will re-render (so we should define the component wise state accordingly)
+
+TODO:
+// Prevent duplicate entry in the list -> Done
+// Change input text to a dropdown list -> TODO
+// Incorporate like counter -> In Progress
+// Display cards for animals -> Done
+// Change styles using Bulma CSS framework => npm i bulma -> Done
+// Show a cross button on each card to remove that animal -> In Progress
+https://bulma.io/documentation
