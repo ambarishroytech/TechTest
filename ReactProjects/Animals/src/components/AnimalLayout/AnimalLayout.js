@@ -13,7 +13,7 @@ import TurtleImage from "../../images/turtle.jpeg";
 import FishImage from "../../images/fish.jpg";
 import CowImage from "../../images/cow.jpg";
 
-const AnimalLayout = ({animals}) => {
+const AnimalLayout = (props) => {
 
     // write a arrow function which will take an animalName as parameter and checking switch case and return an image
     // if not matched return a placeholder image
@@ -40,20 +40,24 @@ const AnimalLayout = ({animals}) => {
         }
      }
 
+    const onAnimalDeleted = (animalToDelete) => {
+        props.onDeleteAnimal(animalToDelete);
+    }
+
     return (
         <div className="box">   
-            <div class="columns is-multiline is-mobile">
+            <div className="columns is-multiline is-mobile">
                 {
-                    animals.map((animal, index) => {
+                    props.animals.map((animal, index) => {
                         return (
-                            <div id={index} class="column is-one-quarter">
-                                <Animal animalName={animal} animalImage={getAnimalImage(animal)}/>
+                            <div id={index} className="column is-one-quarter">
+                                <Animal animalName={animal} animalImage={getAnimalImage(animal)} onDeleteAnimal={onAnimalDeleted}/>
                             </div>
                         );
                     })
                 }
             </div>
-            <AnimalCounter animalCount={animals.length}/>
+            <AnimalCounter animalCount={props.animals.length}/>
         </div>
     );
 }

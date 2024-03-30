@@ -2,12 +2,19 @@ import React from "react";
 import DeleteImage from '../../../../images/delete.png';
 
 const DeleteAnimal = (props) => {
+
+  const onDeleteClicked = (event) => {
+    props.onDeleteAnimal(props.animal);
+  }
+
     return (
         <figure class="image is-48x48">
-          <img
-            src={DeleteImage}
-            alt="Delete"
-          />
+          <a href="#" onClick={onDeleteClicked}>
+            <img
+              src={DeleteImage}
+              alt="Delete"
+            />
+          </a>
         </figure>
     );
 }

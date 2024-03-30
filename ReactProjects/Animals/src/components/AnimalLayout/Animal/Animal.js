@@ -4,6 +4,10 @@ import Like from "./Like/Like";
 import DeleteAnimal from "./DeleteAnimal/DeleteAnimal";
 
 const Animal = (props) => {
+    const onAnimalDeleted = (animal) => {
+        props.onDeleteAnimal(animal);
+    }
+
     return (
         <div className="card">
             <div className="card-image">
@@ -23,7 +27,7 @@ const Animal = (props) => {
                         <p className="title is-4">{props.animalName.toUpperCase()}</p>
                     </div>
                     <div className="media-right">
-                        <DeleteAnimal />
+                        <DeleteAnimal animal={props.animalName} onDeleteAnimal={onAnimalDeleted}/>
                     </div>
                 </div>
             </div>
