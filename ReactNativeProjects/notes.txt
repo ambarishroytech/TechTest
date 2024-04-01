@@ -1,0 +1,12 @@
+npm i -g expo-cli
+npx create-expo-app FirstApp
+cd FirstApp
+npx expo start
+npm start
+
+for web
+npx expo install react-native-web react-dom @expo/metro-runtime
+
+npm install expo-barcode-scanner
+
+https://www.youtube.com/watch?v=LtbuOgoQJAg
