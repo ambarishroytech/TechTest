@@ -1,0 +1,3 @@
+npx react-native init AppFirst
+npm run android
+npx react-native doctor
